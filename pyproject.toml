@@ -1,0 +1,22 @@
+[project]
+name = "ccswitch-codex-history-repair"
+version = "0.1.0"
+description = "Standalone Codex Desktop history visibility repair tool for CCSwitchMulti users"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "BigStrongSun" }]
+
+[project.scripts]
+ccswitch-history-repair = "ccswitch_history_repair:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["ccswitch_history_repair"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
